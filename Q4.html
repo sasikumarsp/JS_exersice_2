@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3 id="demo"></h3>
+
+    <script type="text/javascript">
+      function number(a) {
+        if (0>a>11) {
+          return "blue";
+        }
+        else if (a>21) {
+          return "red";
+        }
+        else if (a>31) {
+          return "green";
+        }
+        else {
+          return "it is not a correct colour option";
+        }
+      }
+      document.getElementById("demo").innerHTML=number(25);
+    </script>
+
+  </body>
+</html>

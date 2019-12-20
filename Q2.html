@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3 id="demo"></h3>
+
+    <script type="text/javascript">
+      function num(a, b, c, d, e) {
+          if (a>b && a>c && a>d && a>e) {
+            return a;
+          }
+          else if (b>c && b>d && b>e) {
+            return b;
+          }
+          else if (c>d && c>e) {
+            return c;
+          }
+          else if (d>e) {
+            return d;
+          }
+          else {
+            return e;
+          }
+      }
+      document.getElementById("demo").innerHTML = num(4, 34, 45, 65, 90);
+
+      var arr = [3, 6, 2, 56, 32, 5, 89, 32];
+      var largest = arr[0];
+
+      for (var i = 0; i < arr.length; i++) {
+        if (largest < arr[i] ) {
+        largest = arr[i];
+      }
+        }
+        console.log(largest);
+
+    </script>
+  </body>
+</html>

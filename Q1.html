@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button onclick="greaterNum(5,6)">Try it</button>
+    <h3 id="demo"></h3>
+    <h4 id="demo1"></h4>
+
+    <script >
+      var a,b,c,d;
+      var a=5,b=6,c=20,d=10;
+      function greaterNum(s,p) {
+        if (s < p) {
+          return p;
+        } else {
+        return s;
+        }
+      }
+        document.getElementById("demo").innerHTML = "The greater number of " + a + " and " + b + " is " + greaterNum(a,b);
+          document.getElementById("demo1").innerHTML = "The greater number of " + c + " and " + d + " is " + greaterNum(c,d);
+    </script>
+  </body>
+</html>
